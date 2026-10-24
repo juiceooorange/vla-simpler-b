@@ -9,6 +9,8 @@ OpenVLA 在 SimplerEnv WidowX Visual Matching 上的轻量微调与 Base / Final
 
 更稳健口径（同一份预注册清单）：预注册 30 状态 T1 30/30、T2 25/30；扩展 100 状态 T1 95/100、T2 86/100；官方 24 trial T1 24/24、T2 22/24。
 
+- 代码仓库：https://github.com/juiceooorange/vla-simpler-b
+- Checkpoint 下载：https://github.com/juiceooorange/vla-simpler-b/tree/main/checkpoints（加载方式见 `checkpoint_link.txt`）
 - 实验报告：`report_B.pdf`（5 页）
 - 逐 episode 记录：`episodes.csv`（408 行，含 base/final × 3 套协议）
 - 汇总结果：`results.csv`
