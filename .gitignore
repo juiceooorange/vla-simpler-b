@@ -1,0 +1,9 @@
+﻿# 运行产物（不提交）
+data/
+models/
+runs/
+results/*/
+*.log
+__pycache__/
+*.pyc
+.DS_Store

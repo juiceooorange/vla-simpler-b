@@ -1,0 +1,88 @@
+# det_t1c: T1 sliding-window detector (LoRA r=8 + heatmap decoder), 30 epochs, lr 3e-4(LoRA)/1e-3(head), batch 12, crop 192, jitter 120px
+[det] train=1841 val=250
+[det] epoch 0 loss 0.28089 presence_acc 100.0
+[det] epoch 1 loss 0.25017 presence_acc 100.0
+[det] epoch 2 loss 0.13130 presence_acc 100.0
+[det] epoch 3 loss 0.01950 presence_acc 100.0
+[det] epoch 4 loss 0.01347 presence_acc 100.0
+[det] epoch 5 loss 0.01117 presence_acc 100.0
+[det] epoch 6 loss 0.01246 presence_acc 100.0
+[det] epoch 7 loss 0.00925 presence_acc 100.0
+[det] epoch 8 loss 0.00806 presence_acc 100.0
+[det] epoch 9 loss 0.00817 presence_acc 100.0
+[det] epoch 10 loss 0.00641 presence_acc 100.0
+[det] epoch 11 loss 0.00704 presence_acc 100.0
+[det] epoch 12 loss 0.00601 presence_acc 100.0
+[det] epoch 13 loss 0.00448 presence_acc 100.0
+[det] epoch 14 loss 0.00373 presence_acc 100.0
+[det] epoch 15 loss 0.00480 presence_acc 100.0
+[det] epoch 16 loss 0.00246 presence_acc 100.0
+[det] epoch 17 loss 0.00431 presence_acc 100.0
+[det] epoch 18 loss 0.00537 presence_acc 100.0
+[det] epoch 19 loss 0.00348 presence_acc 100.0
+[det] epoch 20 loss 0.00227 presence_acc 100.0
+[det] epoch 21 loss 0.00175 presence_acc 100.0
+[det] epoch 22 loss 0.00263 presence_acc 100.0
+[det] epoch 23 loss 0.00120 presence_acc 100.0
+[det] epoch 24 loss 0.00147 presence_acc 100.0
+[det] epoch 25 loss 0.00237 presence_acc 100.0
+[det] epoch 26 loss 0.00141 presence_acc 100.0
+[det] epoch 27 loss 0.00127 presence_acc 100.0
+[det] epoch 28 loss 0.00158 presence_acc 100.0
+[det] epoch 29 loss 0.00111 presence_acc 100.0
+[det] saved runs/det_t1c best 0.0011115321475598547
+
+# yawnet_t1: T1 yaw CNN (sin2theta/cos2theta), 40 epochs, lr 1e-3, batch 64, 128px
+[yaw] train=2454 val=334
+[yaw] epoch 0 loss 0.07663 val_yaw_deg 3.4
+[yaw] epoch 5 loss 0.00304 val_yaw_deg 0.2
+[yaw] epoch 10 loss 0.00182 val_yaw_deg 0.1
+[yaw] epoch 15 loss 0.00097 val_yaw_deg 0.0
+[yaw] epoch 20 loss 0.00056 val_yaw_deg 0.1
+[yaw] epoch 25 loss 0.00042 val_yaw_deg 0.1
+[yaw] epoch 30 loss 0.00022 val_yaw_deg 0.0
+[yaw] epoch 35 loss 0.00015 val_yaw_deg 0.0
+[yaw] epoch 39 loss 0.00012 val_yaw_deg 0.0
+[yaw] saved runs/yawnet_t1 best deg 0.025233437254809508
+
+# head_prop: T2 action head (LLM feature 4096 + proprio 11 -> MLP, chunk=5), 40 epochs, lr 1e-3, batch 64
+{"epoch": 0, "train_mse": 0.009418, "val_mse": 0.007739, "val_mae_mm": 22.716}
+{"epoch": 1, "train_mse": 0.004499, "val_mse": 0.006564, "val_mae_mm": 18.175}
+{"epoch": 2, "train_mse": 0.003468, "val_mse": 0.007673, "val_mae_mm": 19.066}
+{"epoch": 3, "train_mse": 0.002837, "val_mse": 0.00694, "val_mae_mm": 16.134}
+{"epoch": 4, "train_mse": 0.002194, "val_mse": 0.006959, "val_mae_mm": 15.5}
+{"epoch": 5, "train_mse": 0.001837, "val_mse": 0.00673, "val_mae_mm": 14.657}
+{"epoch": 6, "train_mse": 0.00151, "val_mse": 0.006606, "val_mae_mm": 13.032}
+{"epoch": 7, "train_mse": 0.001247, "val_mse": 0.006684, "val_mae_mm": 13.385}
+{"epoch": 8, "train_mse": 0.000972, "val_mse": 0.006768, "val_mae_mm": 13.435}
+{"epoch": 9, "train_mse": 0.000801, "val_mse": 0.00649, "val_mae_mm": 13.0}
+{"epoch": 10, "train_mse": 0.000663, "val_mse": 0.006506, "val_mae_mm": 11.941}
+{"epoch": 11, "train_mse": 0.000603, "val_mse": 0.006402, "val_mae_mm": 11.11}
+{"epoch": 12, "train_mse": 0.000526, "val_mse": 0.00661, "val_mae_mm": 10.975}
+{"epoch": 13, "train_mse": 0.00043, "val_mse": 0.006842, "val_mae_mm": 10.677}
+{"epoch": 14, "train_mse": 0.000436, "val_mse": 0.006763, "val_mae_mm": 11.04}
+{"epoch": 15, "train_mse": 0.000353, "val_mse": 0.006376, "val_mae_mm": 10.213}
+{"epoch": 16, "train_mse": 0.000275, "val_mse": 0.006677, "val_mae_mm": 10.321}
+{"epoch": 17, "train_mse": 0.000221, "val_mse": 0.006502, "val_mae_mm": 9.181}
+{"epoch": 18, "train_mse": 0.000155, "val_mse": 0.006614, "val_mae_mm": 9.882}
+{"epoch": 19, "train_mse": 0.000117, "val_mse": 0.006539, "val_mae_mm": 8.848}
+{"epoch": 20, "train_mse": 0.000103, "val_mse": 0.006451, "val_mae_mm": 8.653}
+{"epoch": 21, "train_mse": 8.4e-05, "val_mse": 0.006462, "val_mae_mm": 8.599}
+{"epoch": 22, "train_mse": 7.7e-05, "val_mse": 0.006489, "val_mae_mm": 8.546}
+{"epoch": 23, "train_mse": 7.2e-05, "val_mse": 0.006467, "val_mae_mm": 8.044}
+{"epoch": 24, "train_mse": 6.1e-05, "val_mse": 0.00646, "val_mae_mm": 8.315}
+{"epoch": 25, "train_mse": 5e-05, "val_mse": 0.006418, "val_mae_mm": 7.839}
+{"epoch": 26, "train_mse": 4.6e-05, "val_mse": 0.006463, "val_mae_mm": 7.947}
+{"epoch": 27, "train_mse": 4.4e-05, "val_mse": 0.006399, "val_mae_mm": 7.87}
+{"epoch": 28, "train_mse": 4.8e-05, "val_mse": 0.006383, "val_mae_mm": 7.749}
+{"epoch": 29, "train_mse": 3.5e-05, "val_mse": 0.006394, "val_mae_mm": 7.537}
+{"epoch": 30, "train_mse": 3.1e-05, "val_mse": 0.006399, "val_mae_mm": 7.562}
+{"epoch": 31, "train_mse": 2.6e-05, "val_mse": 0.006384, "val_mae_mm": 7.42}
+{"epoch": 32, "train_mse": 2.3e-05, "val_mse": 0.006381, "val_mae_mm": 7.375}
+{"epoch": 33, "train_mse": 1.9e-05, "val_mse": 0.006369, "val_mae_mm": 7.455}
+{"epoch": 34, "train_mse": 1.7e-05, "val_mse": 0.006368, "val_mae_mm": 7.327}
+{"epoch": 35, "train_mse": 1.6e-05, "val_mse": 0.006363, "val_mae_mm": 7.306}
+{"epoch": 36, "train_mse": 1.6e-05, "val_mse": 0.006359, "val_mae_mm": 7.266}
+{"epoch": 37, "train_mse": 1.5e-05, "val_mse": 0.006358, "val_mae_mm": 7.225}
+{"epoch": 38, "train_mse": 1.5e-05, "val_mse": 0.006358, "val_mae_mm": 7.232}
+{"epoch": 39, "train_mse": 1.4e-05, "val_mse": 0.006359, "val_mae_mm": 7.217}

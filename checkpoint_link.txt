@@ -1,0 +1,68 @@
+# Final checkpoint 下载与加载
+
+## 1. 下载
+
+本仓库 `checkpoints/` 已包含全部轻量权重（共 76 MB，不含 7B 基座）：
+
+```
+checkpoints/
+├── det_t1c/          T1 滑窗定位器
+│   ├── detector.pt       LoRA r=8 + 热力图解码器（5.9 MB）
+│   └── vision_lora/      PEFT adapter（28 MB）
+├── yawnet_t1/        T1 朝向 CNN
+│   └── yawnet.pt         （1.0 MB）
+├── vloc2_t1/         T1 目标点（毛巾）头
+│   ├── vla_localizer.pt  全图 4 通道热力图头
+│   └── vision_lora/      PEFT adapter
+└── head_prop/        T2 动作头
+    ├── head.pt           MLP 2.4 M
+    └── head_config.json  chunk=5, proprio=True
+```
+
+外部下载地址（提交前替换为实际链接）：
+
+```
+https://github.com/juiceooorange/vla-simpler-b/tree/main/checkpoints
+仓库：https://github.com/juiceooorange/vla-simpler-b
+```
+
+## 2. 依赖的基座模型
+
+| 项目 | 值 |
+|---|---|
+| 名称 | `ZijianZhang/OpenVLA-7B-SFT-Simpler` |
+| 版本 | HuggingFace 主分支（2026-10 下载，约 14 GB，bf16） |
+| 用途 | 本项目的 LoRA / 热力图头 / 动作头都基于它的视觉编码器与语言模型特征 |
+| 获取 | `huggingface-cli download ZijianZhang/OpenVLA-7B-SFT-Simpler --local-dir models/sft-simpler` |
+
+## 3. 加载方式
+
+评测脚本通过 `--head-dir` 加载轻量权重；`--checkpoint` 指向基座：
+
+```bash
+# T1
+export LOCALIZE_KIND=det DET_MODE=vote YAWNET_DIR=checkpoints/yawnet_t1 DST_DIR=checkpoints/vloc2_t1
+python evaluate.py --policy localize --head-dir checkpoints/det_t1c \
+  --checkpoint models/sft-simpler --task widowx_spoon_on_towel --episodes 10 \
+  --eval-config configs/eval_states.json --output-dir results/ --no-video
+
+# T2
+python evaluate.py --policy head --head-dir checkpoints/head_prop \
+  --checkpoint models/sft-simpler --task widowx_put_eggplant_in_basket --episodes 10 \
+  --eval-config configs/eval_states.json --output-dir results/ --no-video
+```
+
+加载细节：
+
+- `det_t1c/detector.pt` 内含 `decoder` 权重、`Hm`（像素→世界单应）与 `lora` 标记；若存在 `vision_lora/`，脚本用 PEFT 加载并 `merge_and_unload()`。
+- `head_prop/head.pt` 与 `head_config.json` 必须同时存在：后者记录特征维度（4096+11）、动作块长度（5）与是否使用 proprio。
+- 权重可在独立进程中加载（`evaluate.py` 每次新建进程），不依赖训练时的工作目录。
+
+## 4. 校验
+
+```bash
+python evaluate.py --policy head --head-dir checkpoints/head_prop --checkpoint models/sft-simpler \
+  --task widowx_put_eggplant_in_basket --episodes 10 --eval-config configs/eval_states.json \
+  --output-dir /tmp/ckpt_check --no-video
+# 期望：success_rate = 100.0（B 类 10 次口径）
+```

@@ -1,0 +1,13 @@
+setting,task,episodes,success,rate_pct,ci95_low,ci95_high,mean_steps
+Base (10 eps),widowx_spoon_on_towel,10,0,0.0,0,27.8,120.0
+Base (10 eps),widowx_put_eggplant_in_basket,10,0,0.0,0,27.8,120.0
+Base (30 states),widowx_spoon_on_towel,30,0,0.0,0,11.4,120.0
+Base (30 states),widowx_put_eggplant_in_basket,30,0,0.0,0,11.4,120.0
+Final (10 eps),widowx_spoon_on_towel,10,10,100.0,72.2,100,50.5
+Final (10 eps),widowx_put_eggplant_in_basket,10,10,100.0,72.2,100,37.6
+Final (30 states),widowx_spoon_on_towel,30,30,100.0,88.6,100,50.0
+Final (30 states),widowx_put_eggplant_in_basket,30,25,83.3,66.4,92.7,50.8
+Final (100 states),widowx_spoon_on_towel,100,95,95.0,88.8,97.8,53.0
+Final (100 states),widowx_put_eggplant_in_basket,100,86,86.0,77.9,91.5,48.0
+Final (official 24 trial),widowx_spoon_on_towel,24,24,100.0,86.2,100,49.7
+Final (official 24 trial),widowx_put_eggplant_in_basket,24,22,91.7,74.2,97.7,42.8

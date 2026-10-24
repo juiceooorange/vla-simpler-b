@@ -1,0 +1,5251 @@
+{
+  "version": 1,
+  "split": "test_ext",
+  "created_utc": "2026-10-20T11:14:52+00:00",
+  "protocol": {
+    "control_freq": 5,
+    "sim_freq": 500,
+    "max_episode_steps": 120,
+    "success_key": "success",
+    "model_seed": 0,
+    "env_seed_policy": "fixed 0; initial state specified by episode_id + robot_init_xy",
+    "b_class": "test split, first 10 states per task",
+    "a_class": "test split, all 30 states per task",
+    "dev": "dev split; never reported as formal results"
+  },
+  "note": "same object placements (0-9); robot start pose jittered +-8 mm, 10 per placement",
+  "tasks": {
+    "widowx_spoon_on_towel": {
+      "env_name": "PutSpoonOnTableClothInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 0,
+          "robot_init_x": 0.14981,
+          "robot_init_y": 0.02343,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 0,
+          "robot_init_x": 0.14026,
+          "robot_init_y": 0.02289,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 0,
+          "robot_init_x": 0.14069,
+          "robot_init_y": 0.02905,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 0,
+          "robot_init_x": 0.14855,
+          "robot_init_y": 0.02521,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 1,
+          "robot_init_x": 0.14241,
+          "robot_init_y": 0.02439,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 1,
+          "robot_init_x": 0.14648,
+          "robot_init_y": 0.02423,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 1,
+          "robot_init_x": 0.14649,
+          "robot_init_y": 0.03544,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 2,
+          "robot_init_x": 0.15349,
+          "robot_init_y": 0.02886,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 2,
+          "robot_init_x": 0.14265,
+          "robot_init_y": 0.02038,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 2,
+          "robot_init_x": 0.14302,
+          "robot_init_y": 0.02912,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "episode_id": 3,
+          "robot_init_x": 0.14837,
+          "robot_init_y": 0.02672,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "episode_id": 3,
+          "robot_init_x": 0.1473,
+          "robot_init_y": 0.02958,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "episode_id": 3,
+          "robot_init_x": 0.14415,
+          "robot_init_y": 0.02651,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "episode_id": 3,
+          "robot_init_x": 0.14843,
+          "robot_init_y": 0.02234,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "episode_id": 4,
+          "robot_init_x": 0.14317,
+          "robot_init_y": 0.02698,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "episode_id": 4,
+          "robot_init_x": 0.1425,
+          "robot_init_y": 0.02211,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "episode_id": 4,
+          "robot_init_x": 0.15449,
+          "robot_init_y": 0.02904,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "episode_id": 5,
+          "robot_init_x": 0.14232,
+          "robot_init_y": 0.02455,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "episode_id": 5,
+          "robot_init_x": 0.14295,
+          "robot_init_y": 0.02777,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "episode_id": 5,
+          "robot_init_x": 0.15251,
+          "robot_init_y": 0.02983,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "episode_id": 6,
+          "robot_init_x": 0.14925,
+          "robot_init_y": 0.03015,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "episode_id": 6,
+          "robot_init_x": 0.148,
+          "robot_init_y": 0.02326,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "episode_id": 6,
+          "robot_init_x": 0.13983,
+          "robot_init_y": 0.02096,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "episode_id": 6,
+          "robot_init_x": 0.14269,
+          "robot_init_y": 0.02239,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "episode_id": 7,
+          "robot_init_x": 0.15417,
+          "robot_init_y": 0.03398,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "episode_id": 7,
+          "robot_init_x": 0.144,
+          "robot_init_y": 0.02573,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "episode_id": 7,
+          "robot_init_x": 0.15204,
+          "robot_init_y": 0.02818,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "episode_id": 8,
+          "robot_init_x": 0.1404,
+          "robot_init_y": 0.02348,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "episode_id": 8,
+          "robot_init_x": 0.15048,
+          "robot_init_y": 0.02952,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "episode_id": 8,
+          "robot_init_x": 0.15335,
+          "robot_init_y": 0.02964,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 30,
+          "episode_id": 9,
+          "robot_init_x": 0.1508,
+          "robot_init_y": 0.02192,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 31,
+          "episode_id": 9,
+          "robot_init_x": 0.14726,
+          "robot_init_y": 0.0229,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 32,
+          "episode_id": 9,
+          "robot_init_x": 0.15134,
+          "robot_init_y": 0.0358,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 33,
+          "episode_id": 9,
+          "robot_init_x": 0.14213,
+          "robot_init_y": 0.02306,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 34,
+          "episode_id": 0,
+          "robot_init_x": 0.14784,
+          "robot_init_y": 0.0244,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 35,
+          "episode_id": 0,
+          "robot_init_x": 0.14295,
+          "robot_init_y": 0.03339,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 36,
+          "episode_id": 0,
+          "robot_init_x": 0.13593,
+          "robot_init_y": 0.0298,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 37,
+          "episode_id": 1,
+          "robot_init_x": 0.1444,
+          "robot_init_y": 0.0263,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 38,
+          "episode_id": 1,
+          "robot_init_x": 0.14447,
+          "robot_init_y": 0.03352,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 39,
+          "episode_id": 1,
+          "robot_init_x": 0.14436,
+          "robot_init_y": 0.02203,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 40,
+          "episode_id": 2,
+          "robot_init_x": 0.149,
+          "robot_init_y": 0.03487,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 41,
+          "episode_id": 2,
+          "robot_init_x": 0.13498,
+          "robot_init_y": 0.03321,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 42,
+          "episode_id": 2,
+          "robot_init_x": 0.13618,
+          "robot_init_y": 0.0242,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 43,
+          "episode_id": 2,
+          "robot_init_x": 0.148,
+          "robot_init_y": 0.03109,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 44,
+          "episode_id": 3,
+          "robot_init_x": 0.14264,
+          "robot_init_y": 0.03161,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 45,
+          "episode_id": 3,
+          "robot_init_x": 0.14374,
+          "robot_init_y": 0.02751,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 46,
+          "episode_id": 3,
+          "robot_init_x": 0.14408,
+          "robot_init_y": 0.02437,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 47,
+          "episode_id": 4,
+          "robot_init_x": 0.13869,
+          "robot_init_y": 0.02435,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 48,
+          "episode_id": 4,
+          "robot_init_x": 0.13949,
+          "robot_init_y": 0.03551,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 49,
+          "episode_id": 4,
+          "robot_init_x": 0.14642,
+          "robot_init_y": 0.03119,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 50,
+          "episode_id": 5,
+          "robot_init_x": 0.14396,
+          "robot_init_y": 0.03443,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 51,
+          "episode_id": 5,
+          "robot_init_x": 0.13768,
+          "robot_init_y": 0.02686,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 52,
+          "episode_id": 5,
+          "robot_init_x": 0.13617,
+          "robot_init_y": 0.02817,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 53,
+          "episode_id": 5,
+          "robot_init_x": 0.13435,
+          "robot_init_y": 0.02643,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 54,
+          "episode_id": 6,
+          "robot_init_x": 0.14311,
+          "robot_init_y": 0.02346,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 55,
+          "episode_id": 6,
+          "robot_init_x": 0.13707,
+          "robot_init_y": 0.02463,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 56,
+          "episode_id": 6,
+          "robot_init_x": 0.13954,
+          "robot_init_y": 0.02294,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 57,
+          "episode_id": 7,
+          "robot_init_x": 0.13981,
+          "robot_init_y": 0.02146,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 58,
+          "episode_id": 7,
+          "robot_init_x": 0.14077,
+          "robot_init_y": 0.03129,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 59,
+          "episode_id": 7,
+          "robot_init_x": 0.14508,
+          "robot_init_y": 0.02276,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 60,
+          "episode_id": 8,
+          "robot_init_x": 0.14641,
+          "robot_init_y": 0.02055,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 61,
+          "episode_id": 8,
+          "robot_init_x": 0.14666,
+          "robot_init_y": 0.0328,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 62,
+          "episode_id": 8,
+          "robot_init_x": 0.13455,
+          "robot_init_y": 0.0283,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 63,
+          "episode_id": 8,
+          "robot_init_x": 0.13537,
+          "robot_init_y": 0.03022,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 64,
+          "episode_id": 9,
+          "robot_init_x": 0.13559,
+          "robot_init_y": 0.02656,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 65,
+          "episode_id": 9,
+          "robot_init_x": 0.14124,
+          "robot_init_y": 0.03192,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 66,
+          "episode_id": 9,
+          "robot_init_x": 0.13597,
+          "robot_init_y": 0.02028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 67,
+          "episode_id": 0,
+          "robot_init_x": 0.1563,
+          "robot_init_y": 0.03178,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 68,
+          "episode_id": 0,
+          "robot_init_x": 0.15525,
+          "robot_init_y": 0.02211,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 69,
+          "episode_id": 0,
+          "robot_init_x": 0.15771,
+          "robot_init_y": 0.03432,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 70,
+          "episode_id": 1,
+          "robot_init_x": 0.1585,
+          "robot_init_y": 0.03535,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 71,
+          "episode_id": 1,
+          "robot_init_x": 0.14441,
+          "robot_init_y": 0.02733,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 72,
+          "episode_id": 1,
+          "robot_init_x": 0.14634,
+          "robot_init_y": 0.03093,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 73,
+          "episode_id": 1,
+          "robot_init_x": 0.15192,
+          "robot_init_y": 0.02107,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 74,
+          "episode_id": 2,
+          "robot_init_x": 0.14603,
+          "robot_init_y": 0.03551,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 75,
+          "episode_id": 2,
+          "robot_init_x": 0.14824,
+          "robot_init_y": 0.03439,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 76,
+          "episode_id": 2,
+          "robot_init_x": 0.14848,
+          "robot_init_y": 0.02006,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 77,
+          "episode_id": 3,
+          "robot_init_x": 0.14998,
+          "robot_init_y": 0.02848,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 78,
+          "episode_id": 3,
+          "robot_init_x": 0.1543,
+          "robot_init_y": 0.02826,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 79,
+          "episode_id": 3,
+          "robot_init_x": 0.15703,
+          "robot_init_y": 0.02326,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 80,
+          "episode_id": 4,
+          "robot_init_x": 0.15883,
+          "robot_init_y": 0.02403,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 81,
+          "episode_id": 4,
+          "robot_init_x": 0.14702,
+          "robot_init_y": 0.0286,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 82,
+          "episode_id": 4,
+          "robot_init_x": 0.15577,
+          "robot_init_y": 0.02471,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 83,
+          "episode_id": 4,
+          "robot_init_x": 0.1471,
+          "robot_init_y": 0.02776,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 84,
+          "episode_id": 5,
+          "robot_init_x": 0.15152,
+          "robot_init_y": 0.02996,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 85,
+          "episode_id": 5,
+          "robot_init_x": 0.1574,
+          "robot_init_y": 0.02762,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 86,
+          "episode_id": 5,
+          "robot_init_x": 0.1452,
+          "robot_init_y": 0.02101,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 87,
+          "episode_id": 6,
+          "robot_init_x": 0.15477,
+          "robot_init_y": 0.02195,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 88,
+          "episode_id": 6,
+          "robot_init_x": 0.14678,
+          "robot_init_y": 0.03017,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 89,
+          "episode_id": 6,
+          "robot_init_x": 0.14668,
+          "robot_init_y": 0.02982,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 90,
+          "episode_id": 7,
+          "robot_init_x": 0.14759,
+          "robot_init_y": 0.02452,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 91,
+          "episode_id": 7,
+          "robot_init_x": 0.15089,
+          "robot_init_y": 0.02984,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 92,
+          "episode_id": 7,
+          "robot_init_x": 0.15706,
+          "robot_init_y": 0.02595,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 93,
+          "episode_id": 7,
+          "robot_init_x": 0.1458,
+          "robot_init_y": 0.03333,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 94,
+          "episode_id": 8,
+          "robot_init_x": 0.15874,
+          "robot_init_y": 0.02003,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 95,
+          "episode_id": 8,
+          "robot_init_x": 0.15433,
+          "robot_init_y": 0.03305,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 96,
+          "episode_id": 8,
+          "robot_init_x": 0.1541,
+          "robot_init_y": 0.02633,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 97,
+          "episode_id": 9,
+          "robot_init_x": 0.15878,
+          "robot_init_y": 0.03427,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 98,
+          "episode_id": 9,
+          "robot_init_x": 0.15748,
+          "robot_init_y": 0.02329,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 99,
+          "episode_id": 9,
+          "robot_init_x": 0.15758,
+          "robot_init_y": 0.02258,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_put_eggplant_in_basket": {
+      "env_name": "PutEggplantInBasketScene-v0",
+      "scene_name": "bridge_table_1_v2",
+      "robot": "widowx_sink_camera_setup",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 0,
+          "robot_init_x": 0.13026,
+          "robot_init_y": 0.05455,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 0,
+          "robot_init_x": 0.13025,
+          "robot_init_y": 0.05304,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 0,
+          "robot_init_x": 0.12396,
+          "robot_init_y": 0.06384,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 0,
+          "robot_init_x": 0.12224,
+          "robot_init_y": 0.05243,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 1,
+          "robot_init_x": 0.13203,
+          "robot_init_y": 0.05515,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 1,
+          "robot_init_x": 0.13008,
+          "robot_init_y": 0.06199,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 1,
+          "robot_init_x": 0.13228,
+          "robot_init_y": 0.06177,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 2,
+          "robot_init_x": 0.13003,
+          "robot_init_y": 0.05878,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 2,
+          "robot_init_x": 0.11997,
+          "robot_init_y": 0.062,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 2,
+          "robot_init_x": 0.1301,
+          "robot_init_y": 0.05446,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "episode_id": 3,
+          "robot_init_x": 0.12338,
+          "robot_init_y": 0.06255,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "episode_id": 3,
+          "robot_init_x": 0.12134,
+          "robot_init_y": 0.06399,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "episode_id": 3,
+          "robot_init_x": 0.12059,
+          "robot_init_y": 0.05809,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "episode_id": 3,
+          "robot_init_x": 0.12094,
+          "robot_init_y": 0.06654,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "episode_id": 4,
+          "robot_init_x": 0.12028,
+          "robot_init_y": 0.05689,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "episode_id": 4,
+          "robot_init_x": 0.13103,
+          "robot_init_y": 0.05535,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "episode_id": 4,
+          "robot_init_x": 0.13331,
+          "robot_init_y": 0.06264,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "episode_id": 5,
+          "robot_init_x": 0.12441,
+          "robot_init_y": 0.05648,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "episode_id": 5,
+          "robot_init_x": 0.1223,
+          "robot_init_y": 0.06665,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "episode_id": 5,
+          "robot_init_x": 0.13119,
+          "robot_init_y": 0.06784,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "episode_id": 6,
+          "robot_init_x": 0.12144,
+          "robot_init_y": 0.05607,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "episode_id": 6,
+          "robot_init_x": 0.13345,
+          "robot_init_y": 0.05241,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "episode_id": 6,
+          "robot_init_x": 0.12883,
+          "robot_init_y": 0.06192,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "episode_id": 6,
+          "robot_init_x": 0.12793,
+          "robot_init_y": 0.06081,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "episode_id": 7,
+          "robot_init_x": 0.1326,
+          "robot_init_y": 0.05616,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "episode_id": 7,
+          "robot_init_x": 0.13208,
+          "robot_init_y": 0.05365,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "episode_id": 7,
+          "robot_init_x": 0.12848,
+          "robot_init_y": 0.05682,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "episode_id": 8,
+          "robot_init_x": 0.12122,
+          "robot_init_y": 0.0656,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "episode_id": 8,
+          "robot_init_x": 0.12021,
+          "robot_init_y": 0.05969,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "episode_id": 8,
+          "robot_init_x": 0.13276,
+          "robot_init_y": 0.06703,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 30,
+          "episode_id": 9,
+          "robot_init_x": 0.13243,
+          "robot_init_y": 0.06704,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 31,
+          "episode_id": 9,
+          "robot_init_x": 0.12744,
+          "robot_init_y": 0.0619,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 32,
+          "episode_id": 9,
+          "robot_init_x": 0.1236,
+          "robot_init_y": 0.05801,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 33,
+          "episode_id": 9,
+          "robot_init_x": 0.13053,
+          "robot_init_y": 0.06774,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 34,
+          "episode_id": 0,
+          "robot_init_x": 0.11659,
+          "robot_init_y": 0.06328,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 35,
+          "episode_id": 0,
+          "robot_init_x": 0.12607,
+          "robot_init_y": 0.05702,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 36,
+          "episode_id": 0,
+          "robot_init_x": 0.12889,
+          "robot_init_y": 0.05547,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 37,
+          "episode_id": 1,
+          "robot_init_x": 0.12126,
+          "robot_init_y": 0.05422,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 38,
+          "episode_id": 1,
+          "robot_init_x": 0.12746,
+          "robot_init_y": 0.05882,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 39,
+          "episode_id": 1,
+          "robot_init_x": 0.12301,
+          "robot_init_y": 0.05212,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 40,
+          "episode_id": 2,
+          "robot_init_x": 0.11475,
+          "robot_init_y": 0.06219,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 41,
+          "episode_id": 2,
+          "robot_init_x": 0.12181,
+          "robot_init_y": 0.05794,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 42,
+          "episode_id": 2,
+          "robot_init_x": 0.11601,
+          "robot_init_y": 0.06293,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 43,
+          "episode_id": 2,
+          "robot_init_x": 0.11438,
+          "robot_init_y": 0.06609,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 44,
+          "episode_id": 3,
+          "robot_init_x": 0.11767,
+          "robot_init_y": 0.05853,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 45,
+          "episode_id": 3,
+          "robot_init_x": 0.12879,
+          "robot_init_y": 0.06528,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 46,
+          "episode_id": 3,
+          "robot_init_x": 0.11485,
+          "robot_init_y": 0.06764,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 47,
+          "episode_id": 4,
+          "robot_init_x": 0.12521,
+          "robot_init_y": 0.06371,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 48,
+          "episode_id": 4,
+          "robot_init_x": 0.12056,
+          "robot_init_y": 0.06426,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 49,
+          "episode_id": 4,
+          "robot_init_x": 0.12082,
+          "robot_init_y": 0.05726,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 50,
+          "episode_id": 5,
+          "robot_init_x": 0.12191,
+          "robot_init_y": 0.06359,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 51,
+          "episode_id": 5,
+          "robot_init_x": 0.12422,
+          "robot_init_y": 0.06214,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 52,
+          "episode_id": 5,
+          "robot_init_x": 0.12668,
+          "robot_init_y": 0.05742,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 53,
+          "episode_id": 5,
+          "robot_init_x": 0.12265,
+          "robot_init_y": 0.05266,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 54,
+          "episode_id": 6,
+          "robot_init_x": 0.12994,
+          "robot_init_y": 0.06107,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 55,
+          "episode_id": 6,
+          "robot_init_x": 0.12168,
+          "robot_init_y": 0.05777,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 56,
+          "episode_id": 6,
+          "robot_init_x": 0.12429,
+          "robot_init_y": 0.06463,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 57,
+          "episode_id": 7,
+          "robot_init_x": 0.11801,
+          "robot_init_y": 0.0583,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 58,
+          "episode_id": 7,
+          "robot_init_x": 0.1287,
+          "robot_init_y": 0.06088,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 59,
+          "episode_id": 7,
+          "robot_init_x": 0.12789,
+          "robot_init_y": 0.05405,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 60,
+          "episode_id": 8,
+          "robot_init_x": 0.12377,
+          "robot_init_y": 0.05615,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 61,
+          "episode_id": 8,
+          "robot_init_x": 0.12515,
+          "robot_init_y": 0.06489,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 62,
+          "episode_id": 8,
+          "robot_init_x": 0.12136,
+          "robot_init_y": 0.06313,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 63,
+          "episode_id": 8,
+          "robot_init_x": 0.12666,
+          "robot_init_y": 0.06767,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 64,
+          "episode_id": 9,
+          "robot_init_x": 0.12941,
+          "robot_init_y": 0.05278,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 65,
+          "episode_id": 9,
+          "robot_init_x": 0.12144,
+          "robot_init_y": 0.06104,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 66,
+          "episode_id": 9,
+          "robot_init_x": 0.12747,
+          "robot_init_y": 0.06675,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 67,
+          "episode_id": 0,
+          "robot_init_x": 0.13072,
+          "robot_init_y": 0.05961,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 68,
+          "episode_id": 0,
+          "robot_init_x": 0.13152,
+          "robot_init_y": 0.05946,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 69,
+          "episode_id": 0,
+          "robot_init_x": 0.13477,
+          "robot_init_y": 0.06082,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 70,
+          "episode_id": 1,
+          "robot_init_x": 0.13892,
+          "robot_init_y": 0.05551,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 71,
+          "episode_id": 1,
+          "robot_init_x": 0.13193,
+          "robot_init_y": 0.05929,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 72,
+          "episode_id": 1,
+          "robot_init_x": 0.13981,
+          "robot_init_y": 0.06198,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 73,
+          "episode_id": 1,
+          "robot_init_x": 0.1314,
+          "robot_init_y": 0.06119,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 74,
+          "episode_id": 2,
+          "robot_init_x": 0.12565,
+          "robot_init_y": 0.05574,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 75,
+          "episode_id": 2,
+          "robot_init_x": 0.13428,
+          "robot_init_y": 0.06254,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 76,
+          "episode_id": 2,
+          "robot_init_x": 0.13601,
+          "robot_init_y": 0.06047,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 77,
+          "episode_id": 3,
+          "robot_init_x": 0.1322,
+          "robot_init_y": 0.05772,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 78,
+          "episode_id": 3,
+          "robot_init_x": 0.12463,
+          "robot_init_y": 0.06793,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 79,
+          "episode_id": 3,
+          "robot_init_x": 0.12993,
+          "robot_init_y": 0.06359,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 80,
+          "episode_id": 4,
+          "robot_init_x": 0.12427,
+          "robot_init_y": 0.06024,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 81,
+          "episode_id": 4,
+          "robot_init_x": 0.12768,
+          "robot_init_y": 0.05614,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 82,
+          "episode_id": 4,
+          "robot_init_x": 0.12545,
+          "robot_init_y": 0.06025,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 83,
+          "episode_id": 4,
+          "robot_init_x": 0.1249,
+          "robot_init_y": 0.0588,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 84,
+          "episode_id": 5,
+          "robot_init_x": 0.1248,
+          "robot_init_y": 0.06222,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 85,
+          "episode_id": 5,
+          "robot_init_x": 0.13052,
+          "robot_init_y": 0.06797,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 86,
+          "episode_id": 5,
+          "robot_init_x": 0.1387,
+          "robot_init_y": 0.05546,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 87,
+          "episode_id": 6,
+          "robot_init_x": 0.1336,
+          "robot_init_y": 0.0626,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 88,
+          "episode_id": 6,
+          "robot_init_x": 0.13429,
+          "robot_init_y": 0.05847,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 89,
+          "episode_id": 6,
+          "robot_init_x": 0.13245,
+          "robot_init_y": 0.06746,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 90,
+          "episode_id": 7,
+          "robot_init_x": 0.12773,
+          "robot_init_y": 0.0676,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 91,
+          "episode_id": 7,
+          "robot_init_x": 0.13845,
+          "robot_init_y": 0.05807,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 92,
+          "episode_id": 7,
+          "robot_init_x": 0.13839,
+          "robot_init_y": 0.06506,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 93,
+          "episode_id": 7,
+          "robot_init_x": 0.12447,
+          "robot_init_y": 0.065,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 94,
+          "episode_id": 8,
+          "robot_init_x": 0.13269,
+          "robot_init_y": 0.06401,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 95,
+          "episode_id": 8,
+          "robot_init_x": 0.12412,
+          "robot_init_y": 0.05361,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 96,
+          "episode_id": 8,
+          "robot_init_x": 0.12718,
+          "robot_init_y": 0.05285,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 97,
+          "episode_id": 9,
+          "robot_init_x": 0.13502,
+          "robot_init_y": 0.06324,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 98,
+          "episode_id": 9,
+          "robot_init_x": 0.13313,
+          "robot_init_y": 0.05247,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 99,
+          "episode_id": 9,
+          "robot_init_x": 0.13735,
+          "robot_init_y": 0.05842,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_carrot_on_plate": {
+      "env_name": "PutCarrotOnPlateInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 0,
+          "robot_init_x": 0.15194,
+          "robot_init_y": 0.02671,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 0,
+          "robot_init_x": 0.14651,
+          "robot_init_y": 0.02034,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 0,
+          "robot_init_x": 0.15026,
+          "robot_init_y": 0.03354,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 0,
+          "robot_init_x": 0.14511,
+          "robot_init_y": 0.0205,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 1,
+          "robot_init_x": 0.1515,
+          "robot_init_y": 0.03592,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 1,
+          "robot_init_x": 0.14574,
+          "robot_init_y": 0.03031,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 1,
+          "robot_init_x": 0.13957,
+          "robot_init_y": 0.02711,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 2,
+          "robot_init_x": 0.14853,
+          "robot_init_y": 0.02566,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 2,
+          "robot_init_x": 0.15266,
+          "robot_init_y": 0.03418,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 2,
+          "robot_init_x": 0.14454,
+          "robot_init_y": 0.02788,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "episode_id": 3,
+          "robot_init_x": 0.15399,
+          "robot_init_y": 0.03499,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "episode_id": 3,
+          "robot_init_x": 0.14369,
+          "robot_init_y": 0.03029,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "episode_id": 3,
+          "robot_init_x": 0.15282,
+          "robot_init_y": 0.03508,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "episode_id": 3,
+          "robot_init_x": 0.14035,
+          "robot_init_y": 0.03297,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "episode_id": 4,
+          "robot_init_x": 0.15137,
+          "robot_init_y": 0.02924,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "episode_id": 4,
+          "robot_init_x": 0.15202,
+          "robot_init_y": 0.02574,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "episode_id": 4,
+          "robot_init_x": 0.1517,
+          "robot_init_y": 0.02746,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "episode_id": 5,
+          "robot_init_x": 0.1542,
+          "robot_init_y": 0.03591,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "episode_id": 5,
+          "robot_init_x": 0.14142,
+          "robot_init_y": 0.03409,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "episode_id": 5,
+          "robot_init_x": 0.1438,
+          "robot_init_y": 0.02281,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "episode_id": 6,
+          "robot_init_x": 0.15288,
+          "robot_init_y": 0.02161,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "episode_id": 6,
+          "robot_init_x": 0.14774,
+          "robot_init_y": 0.02911,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "episode_id": 6,
+          "robot_init_x": 0.15033,
+          "robot_init_y": 0.02931,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "episode_id": 6,
+          "robot_init_x": 0.14328,
+          "robot_init_y": 0.02375,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "episode_id": 7,
+          "robot_init_x": 0.15044,
+          "robot_init_y": 0.0326,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "episode_id": 7,
+          "robot_init_x": 0.14392,
+          "robot_init_y": 0.02259,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "episode_id": 7,
+          "robot_init_x": 0.14453,
+          "robot_init_y": 0.02581,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "episode_id": 8,
+          "robot_init_x": 0.14814,
+          "robot_init_y": 0.03371,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "episode_id": 8,
+          "robot_init_x": 0.13925,
+          "robot_init_y": 0.03012,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "episode_id": 8,
+          "robot_init_x": 0.15459,
+          "robot_init_y": 0.02439,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 30,
+          "episode_id": 9,
+          "robot_init_x": 0.14476,
+          "robot_init_y": 0.02873,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 31,
+          "episode_id": 9,
+          "robot_init_x": 0.15354,
+          "robot_init_y": 0.03429,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 32,
+          "episode_id": 9,
+          "robot_init_x": 0.15184,
+          "robot_init_y": 0.03181,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 33,
+          "episode_id": 9,
+          "robot_init_x": 0.14629,
+          "robot_init_y": 0.02705,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 34,
+          "episode_id": 0,
+          "robot_init_x": 0.13697,
+          "robot_init_y": 0.03315,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 35,
+          "episode_id": 0,
+          "robot_init_x": 0.13702,
+          "robot_init_y": 0.0204,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 36,
+          "episode_id": 0,
+          "robot_init_x": 0.1435,
+          "robot_init_y": 0.02689,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 37,
+          "episode_id": 1,
+          "robot_init_x": 0.14274,
+          "robot_init_y": 0.03382,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 38,
+          "episode_id": 1,
+          "robot_init_x": 0.14024,
+          "robot_init_y": 0.03447,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 39,
+          "episode_id": 1,
+          "robot_init_x": 0.14551,
+          "robot_init_y": 0.0334,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 40,
+          "episode_id": 2,
+          "robot_init_x": 0.14148,
+          "robot_init_y": 0.0352,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 41,
+          "episode_id": 2,
+          "robot_init_x": 0.1418,
+          "robot_init_y": 0.03333,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 42,
+          "episode_id": 2,
+          "robot_init_x": 0.14706,
+          "robot_init_y": 0.02564,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 43,
+          "episode_id": 2,
+          "robot_init_x": 0.13858,
+          "robot_init_y": 0.02369,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 44,
+          "episode_id": 3,
+          "robot_init_x": 0.14418,
+          "robot_init_y": 0.03334,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 45,
+          "episode_id": 3,
+          "robot_init_x": 0.13941,
+          "robot_init_y": 0.03365,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 46,
+          "episode_id": 3,
+          "robot_init_x": 0.13862,
+          "robot_init_y": 0.03074,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 47,
+          "episode_id": 4,
+          "robot_init_x": 0.14294,
+          "robot_init_y": 0.03094,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 48,
+          "episode_id": 4,
+          "robot_init_x": 0.14185,
+          "robot_init_y": 0.02642,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 49,
+          "episode_id": 4,
+          "robot_init_x": 0.13915,
+          "robot_init_y": 0.02792,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 50,
+          "episode_id": 5,
+          "robot_init_x": 0.13754,
+          "robot_init_y": 0.03513,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 51,
+          "episode_id": 5,
+          "robot_init_x": 0.14269,
+          "robot_init_y": 0.03176,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 52,
+          "episode_id": 5,
+          "robot_init_x": 0.13412,
+          "robot_init_y": 0.0204,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 53,
+          "episode_id": 5,
+          "robot_init_x": 0.14199,
+          "robot_init_y": 0.03407,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 54,
+          "episode_id": 6,
+          "robot_init_x": 0.13963,
+          "robot_init_y": 0.02774,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 55,
+          "episode_id": 6,
+          "robot_init_x": 0.14103,
+          "robot_init_y": 0.0201,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 56,
+          "episode_id": 6,
+          "robot_init_x": 0.13853,
+          "robot_init_y": 0.03054,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 57,
+          "episode_id": 7,
+          "robot_init_x": 0.13536,
+          "robot_init_y": 0.02612,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 58,
+          "episode_id": 7,
+          "robot_init_x": 0.13829,
+          "robot_init_y": 0.02754,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 59,
+          "episode_id": 7,
+          "robot_init_x": 0.13624,
+          "robot_init_y": 0.02805,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 60,
+          "episode_id": 8,
+          "robot_init_x": 0.14488,
+          "robot_init_y": 0.02046,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 61,
+          "episode_id": 8,
+          "robot_init_x": 0.14913,
+          "robot_init_y": 0.02889,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 62,
+          "episode_id": 8,
+          "robot_init_x": 0.14075,
+          "robot_init_y": 0.02675,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 63,
+          "episode_id": 8,
+          "robot_init_x": 0.13492,
+          "robot_init_y": 0.02604,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 64,
+          "episode_id": 9,
+          "robot_init_x": 0.14599,
+          "robot_init_y": 0.02638,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 65,
+          "episode_id": 9,
+          "robot_init_x": 0.14372,
+          "robot_init_y": 0.02634,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 66,
+          "episode_id": 9,
+          "robot_init_x": 0.14583,
+          "robot_init_y": 0.0209,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 67,
+          "episode_id": 0,
+          "robot_init_x": 0.15161,
+          "robot_init_y": 0.02218,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 68,
+          "episode_id": 0,
+          "robot_init_x": 0.1559,
+          "robot_init_y": 0.03491,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 69,
+          "episode_id": 0,
+          "robot_init_x": 0.15627,
+          "robot_init_y": 0.03068,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 70,
+          "episode_id": 1,
+          "robot_init_x": 0.15526,
+          "robot_init_y": 0.02424,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 71,
+          "episode_id": 1,
+          "robot_init_x": 0.15086,
+          "robot_init_y": 0.02588,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 72,
+          "episode_id": 1,
+          "robot_init_x": 0.14928,
+          "robot_init_y": 0.0294,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 73,
+          "episode_id": 1,
+          "robot_init_x": 0.15098,
+          "robot_init_y": 0.03252,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 74,
+          "episode_id": 2,
+          "robot_init_x": 0.15431,
+          "robot_init_y": 0.02748,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 75,
+          "episode_id": 2,
+          "robot_init_x": 0.15272,
+          "robot_init_y": 0.03407,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 76,
+          "episode_id": 2,
+          "robot_init_x": 0.15832,
+          "robot_init_y": 0.02361,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 77,
+          "episode_id": 3,
+          "robot_init_x": 0.15724,
+          "robot_init_y": 0.02098,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 78,
+          "episode_id": 3,
+          "robot_init_x": 0.15121,
+          "robot_init_y": 0.02169,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 79,
+          "episode_id": 3,
+          "robot_init_x": 0.14937,
+          "robot_init_y": 0.03415,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 80,
+          "episode_id": 4,
+          "robot_init_x": 0.14466,
+          "robot_init_y": 0.02105,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 81,
+          "episode_id": 4,
+          "robot_init_x": 0.14509,
+          "robot_init_y": 0.02079,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 82,
+          "episode_id": 4,
+          "robot_init_x": 0.15163,
+          "robot_init_y": 0.02594,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 83,
+          "episode_id": 4,
+          "robot_init_x": 0.15609,
+          "robot_init_y": 0.02923,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 84,
+          "episode_id": 5,
+          "robot_init_x": 0.14605,
+          "robot_init_y": 0.02967,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 85,
+          "episode_id": 5,
+          "robot_init_x": 0.14999,
+          "robot_init_y": 0.02662,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 86,
+          "episode_id": 5,
+          "robot_init_x": 0.14757,
+          "robot_init_y": 0.02135,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 87,
+          "episode_id": 6,
+          "robot_init_x": 0.15896,
+          "robot_init_y": 0.03526,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 88,
+          "episode_id": 6,
+          "robot_init_x": 0.14921,
+          "robot_init_y": 0.03165,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 89,
+          "episode_id": 6,
+          "robot_init_x": 0.14686,
+          "robot_init_y": 0.033,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 90,
+          "episode_id": 7,
+          "robot_init_x": 0.14597,
+          "robot_init_y": 0.02256,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 91,
+          "episode_id": 7,
+          "robot_init_x": 0.14682,
+          "robot_init_y": 0.02975,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 92,
+          "episode_id": 7,
+          "robot_init_x": 0.15217,
+          "robot_init_y": 0.02431,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 93,
+          "episode_id": 7,
+          "robot_init_x": 0.14975,
+          "robot_init_y": 0.02402,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 94,
+          "episode_id": 8,
+          "robot_init_x": 0.14777,
+          "robot_init_y": 0.02306,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 95,
+          "episode_id": 8,
+          "robot_init_x": 0.15258,
+          "robot_init_y": 0.03134,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 96,
+          "episode_id": 8,
+          "robot_init_x": 0.15135,
+          "robot_init_y": 0.02153,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 97,
+          "episode_id": 9,
+          "robot_init_x": 0.14476,
+          "robot_init_y": 0.02289,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 98,
+          "episode_id": 9,
+          "robot_init_x": 0.15254,
+          "robot_init_y": 0.03394,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 99,
+          "episode_id": 9,
+          "robot_init_x": 0.1485,
+          "robot_init_y": 0.02869,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_stack_cube": {
+      "env_name": "StackGreenCubeOnYellowCubeBakedTexInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 0,
+          "robot_init_x": 0.15248,
+          "robot_init_y": 0.0296,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 0,
+          "robot_init_x": 0.14704,
+          "robot_init_y": 0.02728,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 0,
+          "robot_init_x": 0.15368,
+          "robot_init_y": 0.03123,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 0,
+          "robot_init_x": 0.1469,
+          "robot_init_y": 0.02409,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 1,
+          "robot_init_x": 0.14107,
+          "robot_init_y": 0.02031,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 1,
+          "robot_init_x": 0.15057,
+          "robot_init_y": 0.03446,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 1,
+          "robot_init_x": 0.14761,
+          "robot_init_y": 0.02752,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 2,
+          "robot_init_x": 0.14942,
+          "robot_init_y": 0.02624,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 2,
+          "robot_init_x": 0.15006,
+          "robot_init_y": 0.02424,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 2,
+          "robot_init_x": 0.14221,
+          "robot_init_y": 0.02125,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "episode_id": 3,
+          "robot_init_x": 0.14733,
+          "robot_init_y": 0.02416,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "episode_id": 3,
+          "robot_init_x": 0.14181,
+          "robot_init_y": 0.02265,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "episode_id": 3,
+          "robot_init_x": 0.14203,
+          "robot_init_y": 0.02831,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "episode_id": 3,
+          "robot_init_x": 0.14694,
+          "robot_init_y": 0.03212,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "episode_id": 4,
+          "robot_init_x": 0.15238,
+          "robot_init_y": 0.02556,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "episode_id": 4,
+          "robot_init_x": 0.15221,
+          "robot_init_y": 0.03384,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "episode_id": 4,
+          "robot_init_x": 0.13901,
+          "robot_init_y": 0.02173,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "episode_id": 5,
+          "robot_init_x": 0.14142,
+          "robot_init_y": 0.03084,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "episode_id": 5,
+          "robot_init_x": 0.14452,
+          "robot_init_y": 0.02357,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "episode_id": 5,
+          "robot_init_x": 0.13992,
+          "robot_init_y": 0.02785,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "episode_id": 6,
+          "robot_init_x": 0.13925,
+          "robot_init_y": 0.0289,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "episode_id": 6,
+          "robot_init_x": 0.15415,
+          "robot_init_y": 0.02764,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "episode_id": 6,
+          "robot_init_x": 0.148,
+          "robot_init_y": 0.02435,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "episode_id": 6,
+          "robot_init_x": 0.15347,
+          "robot_init_y": 0.02475,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "episode_id": 7,
+          "robot_init_x": 0.14041,
+          "robot_init_y": 0.03279,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "episode_id": 7,
+          "robot_init_x": 0.14049,
+          "robot_init_y": 0.02065,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "episode_id": 7,
+          "robot_init_x": 0.14903,
+          "robot_init_y": 0.03099,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "episode_id": 8,
+          "robot_init_x": 0.15351,
+          "robot_init_y": 0.03288,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "episode_id": 8,
+          "robot_init_x": 0.14554,
+          "robot_init_y": 0.0308,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "episode_id": 8,
+          "robot_init_x": 0.14279,
+          "robot_init_y": 0.03407,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 30,
+          "episode_id": 9,
+          "robot_init_x": 0.14143,
+          "robot_init_y": 0.02698,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 31,
+          "episode_id": 9,
+          "robot_init_x": 0.15204,
+          "robot_init_y": 0.02903,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 32,
+          "episode_id": 9,
+          "robot_init_x": 0.15152,
+          "robot_init_y": 0.03588,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 33,
+          "episode_id": 9,
+          "robot_init_x": 0.15184,
+          "robot_init_y": 0.02742,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 34,
+          "episode_id": 0,
+          "robot_init_x": 0.14775,
+          "robot_init_y": 0.02745,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 35,
+          "episode_id": 0,
+          "robot_init_x": 0.14117,
+          "robot_init_y": 0.03374,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 36,
+          "episode_id": 0,
+          "robot_init_x": 0.14132,
+          "robot_init_y": 0.02974,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 37,
+          "episode_id": 1,
+          "robot_init_x": 0.14427,
+          "robot_init_y": 0.03215,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 38,
+          "episode_id": 1,
+          "robot_init_x": 0.14241,
+          "robot_init_y": 0.02475,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 39,
+          "episode_id": 1,
+          "robot_init_x": 0.14097,
+          "robot_init_y": 0.02305,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 40,
+          "episode_id": 2,
+          "robot_init_x": 0.13973,
+          "robot_init_y": 0.02555,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 41,
+          "episode_id": 2,
+          "robot_init_x": 0.13773,
+          "robot_init_y": 0.02637,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 42,
+          "episode_id": 2,
+          "robot_init_x": 0.14575,
+          "robot_init_y": 0.02142,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 43,
+          "episode_id": 2,
+          "robot_init_x": 0.14225,
+          "robot_init_y": 0.02946,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 44,
+          "episode_id": 3,
+          "robot_init_x": 0.13755,
+          "robot_init_y": 0.02406,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 45,
+          "episode_id": 3,
+          "robot_init_x": 0.13842,
+          "robot_init_y": 0.02518,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 46,
+          "episode_id": 3,
+          "robot_init_x": 0.13584,
+          "robot_init_y": 0.03556,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 47,
+          "episode_id": 4,
+          "robot_init_x": 0.14174,
+          "robot_init_y": 0.03057,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 48,
+          "episode_id": 4,
+          "robot_init_x": 0.14864,
+          "robot_init_y": 0.02145,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 49,
+          "episode_id": 4,
+          "robot_init_x": 0.14416,
+          "robot_init_y": 0.03326,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 50,
+          "episode_id": 5,
+          "robot_init_x": 0.14249,
+          "robot_init_y": 0.0207,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 51,
+          "episode_id": 5,
+          "robot_init_x": 0.14173,
+          "robot_init_y": 0.0285,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 52,
+          "episode_id": 5,
+          "robot_init_x": 0.13836,
+          "robot_init_y": 0.02928,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 53,
+          "episode_id": 5,
+          "robot_init_x": 0.13623,
+          "robot_init_y": 0.02571,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 54,
+          "episode_id": 6,
+          "robot_init_x": 0.13737,
+          "robot_init_y": 0.03407,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 55,
+          "episode_id": 6,
+          "robot_init_x": 0.13941,
+          "robot_init_y": 0.02189,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 56,
+          "episode_id": 6,
+          "robot_init_x": 0.1456,
+          "robot_init_y": 0.03533,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 57,
+          "episode_id": 7,
+          "robot_init_x": 0.14191,
+          "robot_init_y": 0.02795,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 58,
+          "episode_id": 7,
+          "robot_init_x": 0.14965,
+          "robot_init_y": 0.0345,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 59,
+          "episode_id": 7,
+          "robot_init_x": 0.13611,
+          "robot_init_y": 0.02611,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 60,
+          "episode_id": 8,
+          "robot_init_x": 0.14467,
+          "robot_init_y": 0.03166,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 61,
+          "episode_id": 8,
+          "robot_init_x": 0.14128,
+          "robot_init_y": 0.0209,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 62,
+          "episode_id": 8,
+          "robot_init_x": 0.14649,
+          "robot_init_y": 0.02185,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 63,
+          "episode_id": 8,
+          "robot_init_x": 0.14154,
+          "robot_init_y": 0.02118,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 64,
+          "episode_id": 9,
+          "robot_init_x": 0.14968,
+          "robot_init_y": 0.02049,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 65,
+          "episode_id": 9,
+          "robot_init_x": 0.13448,
+          "robot_init_y": 0.03146,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 66,
+          "episode_id": 9,
+          "robot_init_x": 0.13549,
+          "robot_init_y": 0.02223,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 67,
+          "episode_id": 0,
+          "robot_init_x": 0.1452,
+          "robot_init_y": 0.02829,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 68,
+          "episode_id": 0,
+          "robot_init_x": 0.15877,
+          "robot_init_y": 0.0205,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 69,
+          "episode_id": 0,
+          "robot_init_x": 0.15238,
+          "robot_init_y": 0.02138,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 70,
+          "episode_id": 1,
+          "robot_init_x": 0.14817,
+          "robot_init_y": 0.03017,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 71,
+          "episode_id": 1,
+          "robot_init_x": 0.14413,
+          "robot_init_y": 0.03241,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 72,
+          "episode_id": 1,
+          "robot_init_x": 0.15946,
+          "robot_init_y": 0.02068,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 73,
+          "episode_id": 1,
+          "robot_init_x": 0.1492,
+          "robot_init_y": 0.02225,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 74,
+          "episode_id": 2,
+          "robot_init_x": 0.15023,
+          "robot_init_y": 0.03324,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 75,
+          "episode_id": 2,
+          "robot_init_x": 0.14453,
+          "robot_init_y": 0.02366,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 76,
+          "episode_id": 2,
+          "robot_init_x": 0.15064,
+          "robot_init_y": 0.02721,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 77,
+          "episode_id": 3,
+          "robot_init_x": 0.15258,
+          "robot_init_y": 0.03594,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 78,
+          "episode_id": 3,
+          "robot_init_x": 0.15779,
+          "robot_init_y": 0.0204,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 79,
+          "episode_id": 3,
+          "robot_init_x": 0.14833,
+          "robot_init_y": 0.03528,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 80,
+          "episode_id": 4,
+          "robot_init_x": 0.15617,
+          "robot_init_y": 0.02217,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 81,
+          "episode_id": 4,
+          "robot_init_x": 0.14488,
+          "robot_init_y": 0.0306,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 82,
+          "episode_id": 4,
+          "robot_init_x": 0.15137,
+          "robot_init_y": 0.02479,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 83,
+          "episode_id": 4,
+          "robot_init_x": 0.15758,
+          "robot_init_y": 0.02394,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 84,
+          "episode_id": 5,
+          "robot_init_x": 0.1595,
+          "robot_init_y": 0.02555,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 85,
+          "episode_id": 5,
+          "robot_init_x": 0.14642,
+          "robot_init_y": 0.03519,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 86,
+          "episode_id": 5,
+          "robot_init_x": 0.14738,
+          "robot_init_y": 0.02703,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 87,
+          "episode_id": 6,
+          "robot_init_x": 0.14864,
+          "robot_init_y": 0.02239,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 88,
+          "episode_id": 6,
+          "robot_init_x": 0.14439,
+          "robot_init_y": 0.02391,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 89,
+          "episode_id": 6,
+          "robot_init_x": 0.14755,
+          "robot_init_y": 0.02604,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 90,
+          "episode_id": 7,
+          "robot_init_x": 0.14944,
+          "robot_init_y": 0.02897,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 91,
+          "episode_id": 7,
+          "robot_init_x": 0.15153,
+          "robot_init_y": 0.03336,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 92,
+          "episode_id": 7,
+          "robot_init_x": 0.1547,
+          "robot_init_y": 0.02802,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 93,
+          "episode_id": 7,
+          "robot_init_x": 0.15125,
+          "robot_init_y": 0.03507,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 94,
+          "episode_id": 8,
+          "robot_init_x": 0.15825,
+          "robot_init_y": 0.03008,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 95,
+          "episode_id": 8,
+          "robot_init_x": 0.15947,
+          "robot_init_y": 0.02367,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 96,
+          "episode_id": 8,
+          "robot_init_x": 0.14702,
+          "robot_init_y": 0.02726,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 97,
+          "episode_id": 9,
+          "robot_init_x": 0.14428,
+          "robot_init_y": 0.02706,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 98,
+          "episode_id": 9,
+          "robot_init_x": 0.15014,
+          "robot_init_y": 0.02945,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 99,
+          "episode_id": 9,
+          "robot_init_x": 0.14988,
+          "robot_init_y": 0.02969,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    }
+  }
+}

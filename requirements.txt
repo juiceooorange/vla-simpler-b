@@ -1,0 +1,17 @@
+torch==2.14.1
+transformers==4.46.3
+timm==0.9.16
+peft==0.14.0
+accelerate==1.0.1
+sapien==2.2.2
+mani_skill2_real2sim
+opencv-python==4.10.0.84
+numpy==1.26.4
+scipy==1.14.1
+pillow==10.4.0
+huggingface-hub==0.25.2
+safetensors==0.4.5
+sentencepiece==0.2.0
+tokenizers==0.20.1
+imageio==2.36.0
+imageio-ffmpeg==0.5.1

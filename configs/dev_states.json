@@ -1,0 +1,570 @@
+{
+  "version": 1,
+  "split": "dev",
+  "created_utc": "2026-10-19T08:35:05+00:00",
+  "protocol": {
+    "control_freq": 5,
+    "sim_freq": 500,
+    "max_episode_steps": 120,
+    "success_key": "success",
+    "model_seed": 0,
+    "env_seed_policy": "fixed 0; initial state specified by episode_id + robot_init_xy",
+    "b_class": "test split, first 10 states per task",
+    "a_class": "test split, all 30 states per task",
+    "dev": "dev split; never reported as formal results"
+  },
+  "tasks": {
+    "widowx_spoon_on_towel": {
+      "env_name": "PutSpoonOnTableClothInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 10,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 11,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 12,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 13,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 14,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 15,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 16,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 17,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 18,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 19,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_put_eggplant_in_basket": {
+      "env_name": "PutEggplantInBasketScene-v0",
+      "scene_name": "bridge_table_1_v2",
+      "robot": "widowx_sink_camera_setup",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 10,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 11,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 12,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 13,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 14,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 15,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 16,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 17,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 18,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 19,
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_carrot_on_plate": {
+      "env_name": "PutCarrotOnPlateInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 10,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 11,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 12,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 13,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 14,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 15,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 16,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 17,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 18,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 19,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_stack_cube": {
+      "env_name": "StackGreenCubeOnYellowCubeBakedTexInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "episode_id": 10,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "episode_id": 11,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "episode_id": 12,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "episode_id": 13,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "episode_id": 14,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "episode_id": 15,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "episode_id": 16,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "episode_id": 17,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "episode_id": 18,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "episode_id": 19,
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_comment": "WidowX visual-matching task definitions. Overlay paths are relative to the SimplerEnv repo root.",
+  "widowx_spoon_on_towel": {
+    "env_name": "PutSpoonOnTableClothInScene-v0",
+    "scene_name": "bridge_table_1_v1",
+    "robot": "widowx",
+    "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+    "robot_init_base": [0.147, 0.028],
+    "max_episode_steps": 120
+  },
+  "widowx_put_eggplant_in_basket": {
+    "env_name": "PutEggplantInBasketScene-v0",
+    "scene_name": "bridge_table_1_v2",
+    "robot": "widowx_sink_camera_setup",
+    "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png",
+    "robot_init_base": [0.127, 0.06],
+    "max_episode_steps": 120
+  },
+  "widowx_carrot_on_plate": {
+    "env_name": "PutCarrotOnPlateInScene-v0",
+    "scene_name": "bridge_table_1_v1",
+    "robot": "widowx",
+    "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+    "robot_init_base": [0.147, 0.028],
+    "max_episode_steps": 120
+  },
+  "widowx_stack_cube": {
+    "env_name": "StackGreenCubeOnYellowCubeBakedTexInScene-v0",
+    "scene_name": "bridge_table_1_v1",
+    "robot": "widowx",
+    "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+    "robot_init_base": [0.147, 0.028],
+    "max_episode_steps": 120
+  }
+}

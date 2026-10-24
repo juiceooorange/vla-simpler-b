@@ -1,0 +1,992 @@
+{
+  "version": 1,
+  "split": "val",
+  "created_utc": "2026-10-19T17:16:22+00:00",
+  "protocol": {
+    "control_freq": 5,
+    "sim_freq": 500,
+    "max_episode_steps": 120,
+    "success_key": "success",
+    "purpose": "model selection only; never reported as a formal result",
+    "sampling": "uniform object init_xy inside the test-position range",
+    "seed": 1234
+  },
+  "tasks": {
+    "widowx_spoon_on_towel": {
+      "env_name": "PutSpoonOnTableClothInScene-v0",
+      "scene_name": "bridge_table_1_v1",
+      "robot": "widowx",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png",
+      "states": [
+        {
+          "index": 0,
+          "obj_init_xy": [
+            -0.22719,
+            -0.01493
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "obj_init_xy": [
+            -0.22761,
+            -0.03365
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "obj_init_xy": [
+            -0.23245,
+            -0.05634
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "obj_init_xy": [
+            -0.23307,
+            -0.02467
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "obj_init_xy": [
+            -0.22729,
+            -0.03334
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "obj_init_xy": [
+            -0.23147,
+            0.02136
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "obj_init_xy": [
+            -0.22809,
+            0.06147
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "obj_init_xy": [
+            -0.2296,
+            0.02926
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "obj_init_xy": [
+            -0.22911,
+            -0.0398
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "obj_init_xy": [
+            -0.23362,
+            0.06253
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "obj_init_xy": [
+            -0.23452,
+            0.03302
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "obj_init_xy": [
+            -0.22963,
+            0.02154
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "obj_init_xy": [
+            -0.23452,
+            0.07949
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "obj_init_xy": [
+            -0.23149,
+            0.00915
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "obj_init_xy": [
+            -0.23497,
+            -0.0353
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "obj_init_xy": [
+            -0.22813,
+            -0.0078
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "obj_init_xy": [
+            -0.22911,
+            0.07068
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "obj_init_xy": [
+            -0.23377,
+            0.08178
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "obj_init_xy": [
+            -0.23354,
+            0.07354
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "obj_init_xy": [
+            -0.2343,
+            -0.00102
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "obj_init_xy": [
+            -0.22837,
+            -0.03059
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "obj_init_xy": [
+            -0.22805,
+            0.07927
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "obj_init_xy": [
+            -0.22827,
+            -0.00408
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "obj_init_xy": [
+            -0.23204,
+            0.00126
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "obj_init_xy": [
+            -0.23426,
+            -0.03918
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "obj_init_xy": [
+            -0.23071,
+            0.04085
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "obj_init_xy": [
+            -0.23141,
+            -0.02673
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "obj_init_xy": [
+            -0.22742,
+            0.04366
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "obj_init_xy": [
+            -0.23122,
+            -0.00275
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "obj_init_xy": [
+            -0.22903,
+            0.06015
+          ],
+          "robot_init_x": 0.147,
+          "robot_init_y": 0.028,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    },
+    "widowx_put_eggplant_in_basket": {
+      "env_name": "PutEggplantInBasketScene-v0",
+      "scene_name": "bridge_table_1_v2",
+      "robot": "widowx_sink_camera_setup",
+      "rgb_overlay": "ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png",
+      "states": [
+        {
+          "index": 0,
+          "obj_init_xy": [
+            -0.1139,
+            0.22593
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 1,
+          "obj_init_xy": [
+            -0.09793,
+            0.23347
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 2,
+          "obj_init_xy": [
+            -0.12223,
+            0.21511
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 3,
+          "obj_init_xy": [
+            -0.104,
+            0.20374
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 4,
+          "obj_init_xy": [
+            -0.10898,
+            0.21603
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 5,
+          "obj_init_xy": [
+            -0.09235,
+            0.19029
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 6,
+          "obj_init_xy": [
+            -0.11676,
+            0.20259
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 7,
+          "obj_init_xy": [
+            -0.11244,
+            0.1926
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 8,
+          "obj_init_xy": [
+            -0.11288,
+            0.19972
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 9,
+          "obj_init_xy": [
+            -0.09729,
+            0.22122
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 10,
+          "obj_init_xy": [
+            -0.12035,
+            0.20079
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 11,
+          "obj_init_xy": [
+            -0.10188,
+            0.19659
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 12,
+          "obj_init_xy": [
+            -0.09335,
+            0.19669
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 13,
+          "obj_init_xy": [
+            -0.09827,
+            0.21442
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 14,
+          "obj_init_xy": [
+            -0.11355,
+            0.20148
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 15,
+          "obj_init_xy": [
+            -0.09532,
+            0.2085
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 16,
+          "obj_init_xy": [
+            -0.12063,
+            0.19166
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 17,
+          "obj_init_xy": [
+            -0.10869,
+            0.23282
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 18,
+          "obj_init_xy": [
+            -0.11213,
+            0.23035
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 19,
+          "obj_init_xy": [
+            -0.09364,
+            0.19328
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 20,
+          "obj_init_xy": [
+            -0.11377,
+            0.22034
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 21,
+          "obj_init_xy": [
+            -0.11365,
+            0.19857
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 22,
+          "obj_init_xy": [
+            -0.10764,
+            0.22727
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 23,
+          "obj_init_xy": [
+            -0.10169,
+            0.20216
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 24,
+          "obj_init_xy": [
+            -0.10372,
+            0.20547
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 25,
+          "obj_init_xy": [
+            -0.11441,
+            0.23556
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 26,
+          "obj_init_xy": [
+            -0.11433,
+            0.23649
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 27,
+          "obj_init_xy": [
+            -0.11674,
+            0.21771
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 28,
+          "obj_init_xy": [
+            -0.11121,
+            0.2296
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        },
+        {
+          "index": 29,
+          "obj_init_xy": [
+            -0.11905,
+            0.23662
+          ],
+          "robot_init_x": 0.127,
+          "robot_init_y": 0.06,
+          "robot_init_rot_quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "env_seed": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dim": 4107,
+  "hidden": 512,
+  "chunk": 5,
+  "base_model": "../models/sft-simpler",
+  "outputs": "env-space 7-D action chunk",
+  "flip_mode": "none",
+  "crop": null,
+  "proprio": true,
+  "best_val_mse": 0.0063580782152712345
+}
